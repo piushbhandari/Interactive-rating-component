@@ -31,11 +31,6 @@ button {
   justify-content: center;
   align-items: center;
 }
-.fit-image {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
 
 body {
   background: #131518;
@@ -43,6 +38,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .card {
   border-radius: 3rem;
@@ -78,6 +74,7 @@ body {
 .card__ratings {
   margin-bottom: 3.2rem;
   display: flex;
+  flex-wrap: wrap;
   gap: 2.1rem;
 }
 .card__rating-button {
@@ -155,10 +152,78 @@ body {
 }
 /* togglers */
 .card__side1-container {
-  /* display: none; */
   padding: 3.2rem 3.9rem 3.2rem 3.2rem;
 }
 .card__side2-container {
   display: none;
   padding: 4.5rem 4rem 4.5rem 2.7rem;
+}
+
+@media all and (max-width: 26.25em) {
+  body {
+    padding: 0 2.4rem;
+    display: block;
+    height: 100%;
+  }
+  .card {
+    margin-top: 15.4rem;
+  }
+  .card__side1-container {
+    padding: 2.4rem 2.4rem 3.2rem 2.4rem;
+  }
+  .card__side2-container {
+    padding: 3.4rem 2.4rem 3.7rem 2.4rem;
+  }
+
+  .card__star-icon {
+    max-width: 4rem;
+    height: 4rem;
+    margin-bottom: 1.6rem;
+  }
+  .card__title {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    margin-bottom: 1.7rem;
+  }
+  .card__description {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    max-width: 27.9rem;
+  }
+  .card__ratings {
+    margin-bottom: 2.4rem;
+    gap: 1.7rem;
+  }
+  .card__rating-button {
+    font-size: 1.4rem;
+    letter-spacing: 0.175px;
+    height: 4.2rem;
+    width: 4.2rem;
+  }
+  .card__submit-btn {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    letter-spacing: 1.87px;
+    padding: 1.2rem 0 1.5rem 0;
+  }
+  .card__completed-box {
+    margin-bottom: 2.4rem;
+  }
+  .card__rating-display {
+    padding: 0.4rem 1.2rem;
+    max-width: fit-content;
+    margin-bottom: 2.4rem;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+  }
+  .card__thanku {
+    font-size: 2.4rem;
+    line-height: 3rem;
+    margin-bottom: 1.7rem;
+  }
+  .card__appreciation-post {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    max-width: 27.9rem;
+  }
 }
