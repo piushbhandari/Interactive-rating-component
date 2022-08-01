@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+a,
+button {
+  transition: 0.3s ease-in-out;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fit-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+body {
+  background: #131518;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  border-radius: 3rem;
+  background: radial-gradient(
+    98.96% 98.96% at 50% 0%,
+    #232a34 0%,
+    #181e27 100%
+  );
+  padding: 3.2rem 3.9rem 3.2rem 3.2rem;
+}
+
+.card__star-icon {
+  border-radius: 50%;
+  background: #262e38;
+  max-width: 4.8rem;
+  height: 4.8rem;
+  margin-bottom: 3rem;
+}
+.card__title {
+  font-weight: 700;
+  font-size: 2.8rem;
+  line-height: 3.5rem;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+.card__description {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  color: #969fad;
+  margin-bottom: 2.4rem;
+  max-width: 34rem;
+}
+.card__ratings {
+  margin-bottom: 3.2rem;
+  display: flex;
+  gap: 2.1rem;
+}
+.card__rating-button {
+  border-radius: 50%;
+  background: #262e38;
+  color: #7c8798;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.2px;
+  height: 5.1rem;
+  width: 5.1rem;
+}
+.card__rating-button:hover,
+.card__rating-button:focus {
+  background: #7c8798;
+  color: white;
+}
+.card__submit-btn {
+  background: #fc7614;
+  color: white;
+  width: 100%;
+  border-radius: 22.5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.9rem;
+  letter-spacing: 2px;
+  padding: 1.1rem 0 1.5rem 0;
+}
+.card__submit-btn:hover,
+.card__submit-btn:focus {
+  background: white;
+  color: #fc7614;
+}
+.chosen-btn,
+.chosen-btn:hover,
+.chosen-btn:focus {
+  color: white;
+  background: #fc7614;
+}
