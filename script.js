@@ -1,7 +1,10 @@
 const ratingBtns = [...document.querySelectorAll(".card__rating-button")];
 const submitBtn = document.querySelector(".card__submit-btn");
+const ratingText = document.querySelector(".user-rating");
+const side1 = document.querySelector(".card__side1-container");
+const side2 = document.querySelector(".card__side2-container");
 
-let rating = 1;
+let rating;
 
 ratingBtns.forEach((btn) => {
   btn.addEventListener("click", (e) => {
@@ -18,8 +21,16 @@ ratingBtns.forEach((btn) => {
 });
 
 submitBtn.addEventListener("click", (e) => {
-  console.log("hi");
+  if (!rating) {
+    console.log(rating);
+    alert("choose a rating homie");
+    return;
+  }
+  ratingText.textContent = rating;
+  side1.style.display = "none";
+  side2.style.display = "block";
 });
+
 function clearStyles() {
   ratingBtns.forEach((btn) => {
     btn.classList.remove("chosen-btn");
